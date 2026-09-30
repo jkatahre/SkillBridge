@@ -1,7 +1,7 @@
 /* Theme toggle */
-.theme-toggle { display:flex; align-items:center; gap:7px; border:1px solid var(--line); background:var(--white); color:var(--ink); padding:7px 11px; border-radius:18px; font-size:11px; font-weight:700; transition:background .2s,border-color .2s; }.theme-toggle span { color:var(--orange); font-size:14px; line-height:1; }.theme-toggle:hover { border-color:var(--orange); }.landing-actions { display:flex; align-items:center; gap:18px; }
+.theme-toggle { display:flex; align-items:center; gap:7px; border:1px solid var(--line); background:var(--white); color:var(--ink); padding:7px 11px; border-radius:18px; font-size:11px; font-weight:700; transition:background .2s,border-color .2s; }.theme-toggle span { color:var(--orange); font-size:14px; line-height:1; }.theme-toggle:hover { border-color:var(--orange); }
 @media (max-width:700px) { .top-actions { gap:12px; }.theme-toggle { padding:7px 9px; } }
-.app-shell,.sidebar,.topbar,.panel,.readiness-card,.match-card,.stat-card,.landing { transition:background-color .25s,border-color .25s,color .25s; }
+.app-shell,.sidebar,.topbar,.panel,.readiness-card,.match-card,.stat-card { transition:background-color .25s,border-color .25s,color .25s; }
 
 /* Dark theme: remaps the palette variables, then overrides colors App.css hardcodes */
 [data-theme="dark"] { color-scheme:dark; --ink:#e6ece8; --muted:#95a39b; --line:#2c3833; --paper:#121816; --white:#1a2320; --orange:#f07a55; --orange-soft:#3a241c; --green:#6cc093; --green-soft:#1b3127; --blue:#86a6dc; --blue-soft:#1c2738; --shadow:0 12px 35px rgba(0,0,0,.35); color:var(--ink); background:var(--paper); }
@@ -17,12 +17,12 @@
 [data-theme="dark"] .icon-button,[data-theme="dark"] .chevron,[data-theme="dark"] .more-button { color:var(--muted); }
 [data-theme="dark"] .breadcrumb,[data-theme="dark"] .workspace-label,[data-theme="dark"] .nav-label,[data-theme="dark"] .eyebrow { color:#7f8d86; }
 [data-theme="dark"] .breadcrumb span { color:#45524c; }
-[data-theme="dark"] .avatar,[data-theme="dark"] .mini-avatar { background:#5a3a2c; color:#f3c7b1; }
+[data-theme="dark"] .avatar { background:#5a3a2c; color:#f3c7b1; }
 [data-theme="dark"] .candidate-avatar,[data-theme="dark"] .small-avatar { background:#24324a; color:#a9c1e8; }
 
 /* Surfaces and controls */
 [data-theme="dark"] .panel,[data-theme="dark"] .readiness-card { border-color:var(--line); }
-[data-theme="dark"] .outline-button,[data-theme="dark"] .filter-button,[data-theme="dark"] .role-picker,[data-theme="dark"] .shortlist-button,[data-theme="dark"] .answer-list button,[data-theme="dark"] .opportunity-list,[data-theme="dark"] .visual-card { background:var(--white); border-color:var(--line); color:var(--ink); }
+[data-theme="dark"] .outline-button,[data-theme="dark"] .filter-button,[data-theme="dark"] .role-picker,[data-theme="dark"] .shortlist-button,[data-theme="dark"] .answer-list button,[data-theme="dark"] .opportunity-list { background:var(--white); border-color:var(--line); color:var(--ink); }
 [data-theme="dark"] .light-button { background:#e6ece8; color:#18211f; }
 [data-theme="dark"] .text-button { color:var(--orange); }
 [data-theme="dark"] .target-select select,[data-theme="dark"] .role-picker select { color:var(--ink); }
@@ -39,7 +39,7 @@
 [data-theme="dark"] .stat-card.green { background:#16261f; border-color:#22392d; }
 [data-theme="dark"] .stat-card.blue { background:#18212e; border-color:#253247; }
 [data-theme="dark"] .stat-card.purple { background:#211d2b; border-color:#322b42; }
-[data-theme="dark"] .company-mark.coral,[data-theme="dark"] .job-mark { background:#3a241c; color:#f3a283; }
+[data-theme="dark"] .company-mark.coral { background:#3a241c; color:#f3a283; }
 [data-theme="dark"] .company-mark.blue { background:#1c2738; color:#94b3e6; }
 [data-theme="dark"] .company-mark.green { background:#1b3127; color:#7fcfa1; }
 [data-theme="dark"] .skill-symbol { background:#1c2738; color:#94b3e6; }
@@ -51,7 +51,7 @@
 [data-theme="dark"] .step-marker { border-color:#34423c; color:var(--muted); }
 [data-theme="dark"] .step-line { border-left-color:#34423c; }
 [data-theme="dark"] .done-button { border-color:#2e5a42; }
-[data-theme="dark"] .roadmap-side,[data-theme="dark"] .opportunity-banner,[data-theme="dark"] .visual-core { background:#1e332b; }
+[data-theme="dark"] .roadmap-side,[data-theme="dark"] .opportunity-banner { background:#1e332b; }
 [data-theme="dark"] .roadmap-side { border:1px solid #2b453a; }
 [data-theme="dark"] .roadmap-side .eyebrow { color:#8fb39c; }
 
@@ -72,9 +72,3 @@
 [data-theme="dark"] .application-timeline .complete { color:var(--green); }
 
 /* Landing */
-[data-theme="dark"] .landing { background:var(--paper); }
-[data-theme="dark"] .landing-top > span,[data-theme="dark"] .landing-footer { color:var(--muted); }
-[data-theme="dark"] .landing-footer { border-top-color:var(--line); }
-[data-theme="dark"] .landing-proof span { border-left-color:#2e3d37; }
-[data-theme="dark"] .orbit { border-color:#27342f; }
-[data-theme="dark"] .visual-card { box-shadow:0 12px 28px rgba(0,0,0,.4); }
